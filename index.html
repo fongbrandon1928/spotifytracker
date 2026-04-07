@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spotify Now Playing</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Spotify Now Playing</h1>
+        <p class="subtext">
+          Sign in to check what your account is playing right now.
+        </p>
+      </header>
+
+      <section class="card">
+        <div class="actions">
+          <button id="loginButton" class="primary">Connect Spotify</button>
+          <button id="logoutButton" class="ghost">Log out</button>
+        </div>
+        <div class="status">
+          <span id="statusLabel">Status:</span>
+          <span id="statusValue">Not connected</span>
+        </div>
+      </section>
+
+      <section class="card now-playing">
+        <div class="now-playing__art">
+          <img id="albumArt" alt="Album art" />
+        </div>
+        <div class="now-playing__details">
+          <h2 id="trackName">No track loaded</h2>
+          <p id="artistName">-</p>
+          <p id="albumName">-</p>
+          <p id="progress">-</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="actions">
+          <button id="refreshButton">Refresh Now Playing</button>
+          <label class="toggle">
+            <input type="checkbox" id="autoRefreshToggle" />
+            Auto refresh (every 15s)
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
