@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Now Playing — OBS Overlay</title>
+    <link rel="stylesheet" href="./overlay.css" />
+  </head>
+  <body>
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay__art">
+        <img id="albumArt" alt="" />
+      </div>
+      <div class="overlay__right">
+        <div class="overlay__info">
+          <div class="overlay__track"><span id="trackName">Not playing</span></div>
+          <div class="overlay__artist"><span id="artistName"></span></div>
+        </div>
+        <div class="overlay__progress-bar">
+          <div class="overlay__progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <button id="connectButton" class="connect-btn">Connect Spotify</button>
+
+    <script type="module" src="./overlay.js"></script>
+  </body>
+</html>

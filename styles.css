@@ -116,6 +116,19 @@ button:disabled {
   color: #b8c1cc;
 }
 
+.overlay-link {
+  color: #9aa7b5;
+}
+
+.overlay-link a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.overlay-link a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
   .now-playing {
     grid-template-columns: 1fr;
